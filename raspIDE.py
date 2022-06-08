@@ -10,7 +10,7 @@ class App(Tk): # creates the class for the whole project
 		self.schemelogic()
 		self.fontsize = 12
 
-		self.mainTxt = CustomText(self, bg=self.scheme["mainColor"], bd=0, fg=self.scheme["fontColor"], insertbackground=self.scheme["selectorColor"], font=("bruh", self.fontsize, "bold"), tabs="1c") # making the main text widget
+		self.mainTxt = CustomText(self, bg=self.scheme["mainColor"], bd=0, fg=self.scheme["fontColor"], insertbackground=self.scheme["selectorColor"], font=("bruh", self.fontsize), tabs="1c") # making the main text widget
 		self.numberLine = CustomText(self, width=7, bg=self.scheme["numberLineColor"], bd=0, font=("bruh", self.fontsize), fg=self.scheme["numberlineFontColor"])
 		self.numberLine.tag_configure("centerText", justify="center")
 		self.numberLine.tag_add("centerText", "1.0", "end")
@@ -25,7 +25,7 @@ class App(Tk): # creates the class for the whole project
 		self.mainTxt.pack(side=RIGHT, fill=BOTH, expand=True) # packing all the widgets
 		self.numberLine.pack(side=RIGHT, fill=Y)
 
-		self.bind("<Key>", self.lineLogic)
+		self.mainTxt.bind("<<TextModified>>", self.lineLogic)
 		self.bind('<Return>', self.returnLogic)
 
 	def lineLogic(self, event):
@@ -72,3 +72,4 @@ class App(Tk): # creates the class for the whole project
 if __name__ == __name__:
 	main = App()
 	main.mainloop()
+	print(main.scheme)
