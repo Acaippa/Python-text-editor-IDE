@@ -7,4 +7,4 @@ This however will not be a super lightweight IDE.
 # Newest Update
 This image will represent what im currently working on and or is finished. 
 
-![Bare-Minimum's-update.png](https://github.com/Acaippa/Python-text-editor-IDE/blob/73f5034bae462e42076f23924a3aa3b2aa0dda37/Bare%20Minimum's%20update.png?raw=true "Title")
+![Bare-Minimum's-update.png](https://github.com/Acaippa/Python-text-editor-IDE/blob/574aba3e4264741dc66c0099b995f22424d2acc1/git/Python-text-editor.drawio.png?raw=true "Title")
