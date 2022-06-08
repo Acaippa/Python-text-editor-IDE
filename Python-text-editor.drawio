@@ -1,17 +1,93 @@
-<mxfile host="app.diagrams.net" modified="2022-06-08T18:09:12.729Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="3RCotteJJyu9rFWnA1AL" version="19.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-08T19:39:57.150Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="e46VPgVHlmNltJMEEv8b" version="19.0.3" type="github">
   <diagram id="udmSuhE3WM6VNkunlPtU" name="Page-1">
-    <mxGraphModel dx="1237" dy="724" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="5000" pageHeight="5000" math="0" shadow="0">
+    <mxGraphModel dx="2491" dy="1515" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1000" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="4Ba1F7DS-I5bztmgg3UU-1" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1860" y="500" width="250" height="110" as="geometry" />
+        <mxCell id="TcNtyjVMkV9QrZWtxrnO-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=16;strokeWidth=2;" edge="1" parent="1" source="4Ba1F7DS-I5bztmgg3UU-1" target="TcNtyjVMkV9QrZWtxrnO-33">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="4Ba1F7DS-I5bztmgg3UU-2" value="&lt;font style=&quot;font-size: 23px;&quot;&gt;Main&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1955" y="540" width="60" height="30" as="geometry" />
+        <mxCell id="TcNtyjVMkV9QrZWtxrnO-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;strokeWidth=2;" edge="1" parent="1" source="4Ba1F7DS-I5bztmgg3UU-1" target="TcNtyjVMkV9QrZWtxrnO-44">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="4Ba1F7DS-I5bztmgg3UU-3" value="&lt;h1&gt;Functions to implement&lt;/h1&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 31px;&quot;&gt;File menu&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 31px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;-&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=23;" vertex="1" parent="1">
-          <mxGeometry x="70" y="50" width="890" height="600" as="geometry" />
+        <mxCell id="4Ba1F7DS-I5bztmgg3UU-1" value="" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="860" y="450" width="250" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="4Ba1F7DS-I5bztmgg3UU-2" value="&lt;font style=&quot;font-size: 23px;&quot;&gt;Main&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="955" y="490" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4Ba1F7DS-I5bztmgg3UU-3" value="&lt;h1 style=&quot;font-size: 47px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-weight: normal;&quot;&gt;&lt;font style=&quot;font-size: 47px;&quot;&gt;Bare Minumum&#39;s Update&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;font-size: 31px;&quot;&gt;&lt;font style=&quot;font-size: 31px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-weight: normal;&quot;&gt;File menu&lt;/span&gt;&lt;br&gt;&lt;/font&gt;&lt;/h1&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 23px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;- Save file&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;- Save file as&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;- Open file&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;- Exit&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 31px;&quot;&gt;Run menu&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 23px; white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;- Run file without console&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 23px; white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;- Run file with console	&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=23;" parent="1" vertex="1">
+          <mxGeometry x="40" y="90" width="590" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="TcNtyjVMkV9QrZWtxrnO-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=16;strokeWidth=2;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TcNtyjVMkV9QrZWtxrnO-21" target="TcNtyjVMkV9QrZWtxrnO-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1755" y="210.00000000000023" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TcNtyjVMkV9QrZWtxrnO-21" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=23;" vertex="1" parent="1">
+          <mxGeometry x="1305" y="440" width="420" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="TcNtyjVMkV9QrZWtxrnO-22" value="File Handler" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1437.5" y="450" width="155" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TcNtyjVMkV9QrZWtxrnO-24" value="&lt;font style=&quot;font-size: 23px;&quot;&gt;Handle both the opening and saving of files&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;" vertex="1" parent="1">
+          <mxGeometry x="1335" y="490" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TcNtyjVMkV9QrZWtxrnO-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=16;strokeWidth=2;entryX=1.001;entryY=0.333;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="TcNtyjVMkV9QrZWtxrnO-26" target="TcNtyjVMkV9QrZWtxrnO-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1765" y="170.00000000000023" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1785" y="675" />
+              <mxPoint x="1785" y="167" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TcNtyjVMkV9QrZWtxrnO-26" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=23;" vertex="1" parent="1">
+          <mxGeometry x="1305" y="610" width="420" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="TcNtyjVMkV9QrZWtxrnO-27" value="Run Handler" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1431.25" y="620" width="167.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TcNtyjVMkV9QrZWtxrnO-28" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;Handle the running of files&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;" vertex="1" parent="1">
+          <mxGeometry x="1335" y="660" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TcNtyjVMkV9QrZWtxrnO-33" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=23;" vertex="1" parent="1">
+          <mxGeometry x="720" y="90" width="530" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="TcNtyjVMkV9QrZWtxrnO-34" value="Alert Handler" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="891.25" y="100" width="177.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TcNtyjVMkV9QrZWtxrnO-35" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;Handle all the alerts from all the other handlers&lt;br&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;" vertex="1" parent="1">
+          <mxGeometry x="750" y="140" width="460" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TcNtyjVMkV9QrZWtxrnO-37" value="- Takes input from the Handler that requests to send an alert, and make an alert accordingly." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=2" vertex="1" parent="1">
+          <mxGeometry x="750" y="210" width="420" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="TcNtyjVMkV9QrZWtxrnO-41" value="Exception and or Info" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1385" y="130" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TcNtyjVMkV9QrZWtxrnO-43" value="Exception and or Info" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="995" y="350" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TcNtyjVMkV9QrZWtxrnO-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=16;strokeWidth=2;" edge="1" parent="1" source="TcNtyjVMkV9QrZWtxrnO-44" target="TcNtyjVMkV9QrZWtxrnO-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TcNtyjVMkV9QrZWtxrnO-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;strokeWidth=2;" edge="1" parent="1" source="TcNtyjVMkV9QrZWtxrnO-44" target="TcNtyjVMkV9QrZWtxrnO-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1220" y="695" />
+              <mxPoint x="1220" y="505" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TcNtyjVMkV9QrZWtxrnO-44" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=23;" vertex="1" parent="1">
+          <mxGeometry x="775" y="630" width="420" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="TcNtyjVMkV9QrZWtxrnO-45" value="Menu Handler" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="890.63" y="640" width="188.75" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TcNtyjVMkV9QrZWtxrnO-46" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;Makes all the menu buttons etc. and runs their functions aswell&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;" vertex="1" parent="1">
+          <mxGeometry x="805" y="680" width="360" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
