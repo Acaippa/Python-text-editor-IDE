@@ -1,4 +1,4 @@
-class RunHandler:
+class RunHandler: # Handles all the run functions.
 	def __init__(self):
 		pass
 

@@ -1,6 +1,9 @@
 from tkinter import*
 import os
 from data.Texto import CustomText
+from data.run_handler import*
+from data.file_handler import*
+from data.menu_handler import*
 import pyautogui
 
 class App(Tk): # creates the class for the whole project
@@ -10,23 +13,35 @@ class App(Tk): # creates the class for the whole project
 		self.schemelogic()
 		self.fontsize = 12
 
-		self.mainTxt = CustomText(self, bg=self.scheme["mainColor"], bd=0, fg=self.scheme["fontColor"], insertbackground=self.scheme["selectorColor"], font=("bruh", self.fontsize), tabs="1c") # making the main text widget
-		self.numberLine = CustomText(self, width=7, bg=self.scheme["numberLineColor"], bd=0, font=("bruh", self.fontsize), fg=self.scheme["numberlineFontColor"])
+		self.menu = MenuHandler(self) # This line also "draws" the menu
+
+		self.text_frame = LabelFrame(self, bd=0)
+
+		self.mainTxt = CustomText(self.text_frame, bg=self.scheme["mainColor"], bd=0, fg=self.scheme["fontColor"], insertbackground=self.scheme["selectorColor"], font=("bruh", self.fontsize), tabs="1c") # making the main text widget
+
+		self.numberLine = CustomText(self.text_frame, width=7, bg=self.scheme["numberLineColor"], bd=0, font=("bruh", self.fontsize), fg=self.scheme["numberlineFontColor"])
 		self.numberLine.tag_configure("centerText", justify="center")
 		self.numberLine.tag_add("centerText", "1.0", "end")
 		self.scroll = Scrollbar(self)
 
+		self.draw()
 
 		self.scroll["command"] = self.onScrollbar
 		self.mainTxt["yscrollcommand"] = self.ontextScroll
 		self.numberLine["yscrollcommand"] = self.ontextScroll
 
-		self.scroll.pack(side=RIGHT, fill=Y)
-		self.mainTxt.pack(side=RIGHT, fill=BOTH, expand=True) # packing all the widgets
-		self.numberLine.pack(side=RIGHT, fill=Y)
 
 		self.mainTxt.bind("<<TextModified>>", self.lineLogic)
 		self.bind('<Return>', self.returnLogic)
+
+
+	def draw(self):
+		# Draw all the text elements.
+		self.scroll.pack(side=RIGHT, fill=Y)
+		self.numberLine.pack(side=LEFT, fill=Y)
+		self.mainTxt.pack(side=LEFT, fill=BOTH, expand=True)
+
+		self.text_frame.pack(fill=BOTH, expand=True)
 
 	def lineLogic(self, event):
 		self.mainTxt.configure(state="disabled")
