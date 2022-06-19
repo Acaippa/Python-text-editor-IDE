@@ -1,11 +1,12 @@
 import tkinter.filedialog as fd
-import tkinter.messagebox as ms
+from data.alert_handler import*
 
 
 class FileHandler: # Handles actions related to files.
 	def __init__(self, master):
 		self.master = master
 		self.default_extensions = [("All Files", "*.*"), ("Python Files", "*.py"), ("Text Document", "*.txt")]
+		self.alert_handler = AlertHandler()
 
 	def save(self):
 		# Run the save_as command if a path is not already specified.
@@ -38,7 +39,7 @@ class FileHandler: # Handles actions related to files.
 		return False
 
 	def file_not_saved_confirm_quit(self): 
-		bool = ms.askyesno(title="File not saved!", message="Your file has not been saved, Do you really want to quit?")
+		bool = self.alert_handler.ask_yes_no("Quit?", "Your file is not saved, are you sure you want to quit?")
 		if bool:
 			exit()
 		else:

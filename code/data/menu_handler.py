@@ -1,7 +1,7 @@
 from tkinter import*
-import tkinter.messagebox as ms
 from data.file_handler import*
 from data.run_handler import*
+from data.alert_handler import*
 
 class MenuHandler:
 	def __init__(self, master):
@@ -10,6 +10,7 @@ class MenuHandler:
 		self.master.config(menu=self.menu)
 
 		self.file_handler = FileHandler(self.master)
+		self.alert_handler = AlertHandler()
 
 		self.file_menu = Menu(self.menu, tearoff="off")
 		self.file_menu.add_command(label="Save", command=self.file_handler.save)
@@ -26,7 +27,7 @@ class MenuHandler:
 		self.menu.add_cascade(label="Run", menu=self.run_menu)
 
 	def exit(self): 
-		confirm = ms.askyesno(title='Quit?', message='Do you want to quit?')
+		confirm = self.alert_handler.ask_yes_no("Quit?", "Are you sure you want to quit?")
 		if confirm:
 			if not self.file_handler.check_if_saved():
 				self.file_handler.file_not_saved_confirm_quit()
