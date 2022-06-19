@@ -13,6 +13,9 @@ class App(Tk): # creates the class for the whole project
 		self.schemelogic()
 		self.fontsize = 12
 
+		self.path = None
+		self.content_hash = None
+
 		self.menu = MenuHandler(self) # This line also "draws" the menu
 
 		self.text_frame = LabelFrame(self, bd=0)
@@ -43,6 +46,7 @@ class App(Tk): # creates the class for the whole project
 
 		self.text_frame.pack(fill=BOTH, expand=True)
 
+	# ! Some of these line code should be moved.
 	def lineLogic(self, event):
 		self.mainTxt.configure(state="disabled")
 		self.numberLine.delete("1.0", "end")
@@ -52,13 +56,14 @@ class App(Tk): # creates the class for the whole project
 		self.numberLine.tag_add("centerText", "1.0", "end")
 		self.mainTxt.configure(state="normal")
 
+		self.update_hash()
+
 
 	def returnLogic(self, event):
 		char = self.mainTxt.get(self.mainTxt.index("insert-2c")) #gets the character that is before the cursor
 
 		if char == ":":
 			pyautogui.press("tab") # inserting a tab
-
 
 	def onScrollbar(self, *args): # moves the text widgets when the scrollbar moves
 		self.mainTxt.yview(*args)
@@ -68,7 +73,7 @@ class App(Tk): # creates the class for the whole project
 		self.scroll.set(*args)
 		self.onScrollbar("moveto", args[0])
 	
-	def schemelogic(self): # handles the loading of the schemes
+	def schemelogic(self):
 		amountOfSchemes = len(os.listdir(f"{os.getcwd()}\\data\\schemes")) # get the amount of schemes in the schemes directory
 		if amountOfSchemes == 1: # if there is only one scheme, use the default one.
 			self.confColor = os.listdir(f"{os.getcwd()}\\data\\schemes")
@@ -83,6 +88,16 @@ class App(Tk): # creates the class for the whole project
 					self.scheme = eval(open(path, "r").read())
 		if found == False:
 			print("scheme not found")
+
+	def get_data(self):
+		return self.mainTxt.get("1.0", END)
+
+	def load_data(self, data): # ! Applications laggs heavilly when large files are loaded. This is mostly due to the wrapper having to calculate the line breaks and so on.
+		# TODO: Figure out a way to make the application handle large files.
+		self.mainTxt.insert(END, data)
+
+	def update_hash(self):
+		self.content_hash = hash(self.get_data())
 
 if __name__ == __name__:
 	main = App()
